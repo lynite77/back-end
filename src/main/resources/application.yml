@@ -1,0 +1,17 @@
+server:
+  port: 8090
+spring:
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/local
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+  mvc:
+    static-path-pattern: "/static/**"
